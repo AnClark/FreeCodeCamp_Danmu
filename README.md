@@ -1,4 +1,4 @@
-# 爱拼安小匠的 FreeCodeCamp Tribute
+# 爱拼安小匠的 FreeCodeCamp 作业之二：弹幕墙
 
 ## 任务
 完成一个简易的弹幕墙。要求：
