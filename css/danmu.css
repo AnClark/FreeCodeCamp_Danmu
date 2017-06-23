@@ -1,0 +1,77 @@
+body
+{
+    font-family: "Microsoft YaHei UI", Serif;
+    margin: 0;
+    padding: 0;
+
+    /** Hide parts out of screen **/
+    overflow-x: hidden;
+}
+
+.danmu
+{
+    position: relative;
+
+}
+
+.danmu-area
+{
+    height: 600px;
+    width: 100%;
+    background-color: #cccccc;
+
+    margin: 0;
+    padding: 0;
+}
+
+.danmu-wrapper
+{
+    position: absolute;
+}
+
+.danmu-toolbar
+{
+    padding: 25px 0 0 0;
+    width: 100%;
+
+
+}
+
+.btn, .text
+{
+    font-size: 20px;
+    font-family: inherit;
+}
+
+.danmu-toolbar-controllers
+{
+    margin: 0 auto;
+    z-index: 99999;
+}
+
+.btn
+{
+    padding: 5px 40px;
+    margin: 0 15px;
+
+    border-color: #00cd00;
+    border-style: solid;
+    border-radius: 5px;
+
+    background-color: white;
+}
+
+.btn:hover
+{
+    background-color: #8fff95;
+}
+
+.text
+{
+    padding: 8px 2px;
+    margin: 0 15px;
+    width: 500px;
+
+    border-bottom-color: #06e649;
+    border-style: none none solid none;
+}

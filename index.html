@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple Danmu App</title>
+
+    <link rel="stylesheet" href="css/danmu.css">
+</head>
+<body>
+
+    <div class="danmu-area">
+    </div>
+
+    <div class="danmu-toolbar">
+        <div class="danmu-toolbar-controllers">
+            <input type="text" class="text" id="txtDanmu" placeholder="想说什么？" autofocus onkeyup="pressEnterToSend()">
+            <button type="button" class="btn" id="btnSendDanmu" onclick="show_danmu()">发  送</button>
+            <button type="button" class="btn" id="btnClearDanmu" onclick="clear_danmu()">清  除</button>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-jtemplates.js"></script>
+    <script src="js/danmu.js"></script>
+    <script src="js/util.js"></script>
+
+    <script id="INIT">
+        function show_danmu(){
+            var danmu_text = $("#txtDanmu").val();
+            if (!danmu_text)
+                alert("不能发送空弹幕哦~~~");
+            else
+                showDanmu(danmu_text)
+
+            $("#txtDanmu").val("");
+        }
+
+        function clear_danmu() {
+            clearDanmu();
+        }
+
+        function pressEnterToSend() {
+            if (getKeyCharAfterPressing() == '\r') {
+                show_danmu();
+            }
+        }
+
+
+    </script>
+</body>
+</html>
