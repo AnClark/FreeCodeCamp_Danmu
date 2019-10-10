@@ -8,6 +8,12 @@ body
     overflow-x: hidden;
 }
 
+/** Disable input outline **/
+input:focus, button:focus
+{
+    outline: none;
+}
+
 .danmu
 {
     position: relative;
@@ -64,6 +70,11 @@ body
 .btn:hover
 {
     background-color: #8fff95;
+}
+
+.btn:active
+{
+    background-color: #38d840;
 }
 
 .text
